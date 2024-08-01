@@ -1,0 +1,49 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+    <test name="All Tests">
+        <parameter name="firstName1" value="Johnny"/>
+        <parameter name="lastName1" value="Doe"/>
+        <parameter name="age1" value="60"/>
+
+        <parameter name="firstName2" value="Keanu"/>
+        <parameter name="lastName2" value="Rives"/>
+        <parameter name="age2" value="18"/>
+
+        <parameter name="firstName3" value="Carrie-Anne"/>
+        <parameter name="lastName3" value="Moss"/>
+        <parameter name="age3" value="18"/>
+
+        <groups>
+            <run>
+                <include name="all"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="WomanManTest"/>
+        </classes>
+    </test>
+
+    <test name="Getter and Setter Tests">
+        <parameter name="firstName1" value="Johnny"/>
+        <parameter name="lastName1" value="Doe"/>
+        <parameter name="age1" value="60"/>
+
+        <parameter name="firstName2" value="Keanu"/>
+        <parameter name="lastName2" value="Rives"/>
+        <parameter name="age2" value="18"/>
+
+        <parameter name="firstName3" value="Carrie-Anne"/>
+        <parameter name="lastName3" value="Moss"/>
+        <parameter name="age3" value="18"/>
+
+        <groups>
+            <run>
+                <include name="gettersAndSetters"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="WomanManTest"/>
+        </classes>
+    </test>
+
+</suite>
